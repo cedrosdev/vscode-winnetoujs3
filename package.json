@@ -1,6 +1,6 @@
 {
   "name": "vscode-winnetoujs3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WinnetouJs Version 3 Official VsCode Extension Repo",
   "repository": {
     "type": "git",
@@ -36,7 +36,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vsce:publish": "vsce publish"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.9",
