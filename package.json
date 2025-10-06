@@ -1,6 +1,6 @@
 {
   "name": "vscode-winnetoujs3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WinnetouJs Version 3 Official VsCode Extension Repo",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "Other"
   ],
   "activationEvents": [
-    "workspaceContains:filePattern:win.config.json"
+    "workspaceContains:win.config.json"
   ],
   "main": "./dist/extension.js",
   "scripts": {
