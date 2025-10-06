@@ -1,0 +1,96 @@
+{
+  "name": "vscode-winnetoujs3",
+  "version": "1.0.0",
+  "description": "WinnetouJs Version 3 Official VsCode Extension Repo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedrosdev/vscode-winnetoujs3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedrosdev/vscode-winnetoujs3/issues"
+  },
+  "homepage": "https://github.com/cedrosdev/vscode-winnetoujs3#readme",
+  "publisher": "cedros-development",
+  "displayName": "WinnetouJs Version 3",
+  "galleryBanner": {
+    "color": "#8f4598",
+    "theme": "dark"
+  },
+  "icon": "resources/extension-logo.png",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:filePattern:win.config.json"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.36",
+    "vscode-textmate": "^9.1.0"
+  },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "WinnetouSidebarV3",
+          "title": "WinnetouJs Version 3",
+          "icon": "resources/winnetou3-logo.png"
+        }
+      ]
+    },
+    "views": {
+      "WinnetouSidebarV3": [
+        {
+          "name": "Bundler",
+          "id": "bundlerWebView_v3",
+          "type": "webview",
+          "icon": ""
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "winnetoujs.extension.reload",
+          "group": "navigation@1",
+          "when": "view == bundlerWebView_v3"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "WinnetouJs3 Settings",
+      "properties": {
+        "winnetoujs.fullPath": {
+          "type": "string",
+          "default": "/full/path/to/your/winnetoujs/project",
+          "description": "Absolute path of WinnetouJs3 project folder. The same where is located win.config.json and wbr."
+        }
+      }
+    }
+  }
+}
