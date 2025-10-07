@@ -1,13 +1,30 @@
 {
   "name": "vscode-winnetoujs3",
-  "version": "1.0.2",
-  "description": "WinnetouJs Version 3 Official VsCode Extension Repo",
+  "version": "1.0.3",
+  "description": "WinnetouJs Version 3 LTS Official VsCode Extension :: Adds goto constructo wcto.html file in your js/ts code.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cedrosdev/vscode-winnetoujs3.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "winnetoujs",
+    "winnetou",
+    "winnetoujs3",
+    "winnetoujs version 3",
+    "winnetoujs v3",
+    "winnetoujs extension",
+    "winnetoujs vscode",
+    "winnetoujs vs code",
+    "winnetoujs code",
+    "winnetoujs code editor",
+    "winnetoujs ide",
+    "winnetoujs ide extension",
+    "winnetoujs ide vscode",
+    "winnetoujs ide vs code",
+    "winnetoujs ide code editor",
+    "winnetoujs ide code"
+  ],
+  "author": "Pamela Sedrez <pamela@cedrosdev.com> (https://cedros.dev)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cedrosdev/vscode-winnetoujs3/issues"
