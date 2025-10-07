@@ -1,6 +1,6 @@
 {
   "name": "vscode-winnetoujs3",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "WinnetouJs Version 3 LTS Official VsCode Extension :: Adds goto constructo wcto.html file in your js/ts code.",
   "repository": {
     "type": "git",

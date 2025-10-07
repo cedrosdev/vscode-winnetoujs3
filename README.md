@@ -21,13 +21,13 @@ Just press `Ctrl` (or `Cmd` on Mac) and click on a `constructo` keyword in your 
 
 ## Extension Settings
 
-To set a especific path for the winnetoujs project, you can add the following setting in your VSCode settings.json file:
+To set a specific path for the winnetoujs project, you can add the following setting in your VSCode settings.json file:
 
 ```json
-"winnetoujs3.winnetouPath": "path/to/your/winnetoujs"
+"winnetoujs.fullPath": "/absolute/path/to/your/winnetoujs"
 ```
 
-Replace `"path/to/your/winnetoujs"` with the actual path to your WinnetouJs3 installation (normally the folder where win.config.json is located).
+Replace `"/absolute/path/to/your/winnetoujs"` with the actual path to your WinnetouJs3 installation (normally the folder where win.config.json is located).
 
 If you are working on a project that already has a `win.config.json` file in root folder, the extension will automatically detect the path from there, so you don't need to set this manually.
 
